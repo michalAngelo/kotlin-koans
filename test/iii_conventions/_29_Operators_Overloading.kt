@@ -1,8 +1,8 @@
 package iii_conventions
 
+import iii_conventions.TimeInterval.*
 import org.junit.Assert.assertEquals
 import org.junit.Test
-import iii_conventions.TimeInterval.*
 
 class _29_Operators_Overloading {
     @Test fun testAddTimeIntervals() {
@@ -21,5 +21,9 @@ class _29_Operators_Overloading {
 
     @Test fun testMonthChange() {
         assertEquals(MyDate(2016, 1, 20), task29_2(MyDate(2014, 0, 25)))
+    }
+
+    @Test fun testYearWeekChange() {
+        assertEquals(MyDate(2016, 4, 13), task29_3(MyDate(2017, 4, 20)))
     }
 }
