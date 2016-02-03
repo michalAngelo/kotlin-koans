@@ -6,6 +6,7 @@ import org.junit.Test
 class _31_Invoke {
     @Test fun testTask17() {
         assertEquals(4, task31(Invokable()))
+        assertEquals(5, task31_1(Invokable()))
     }
 
     @Test fun testNumberOfInvocations() {
@@ -19,7 +20,4 @@ class _31_Invoke {
         testInvokable(5) { it()()()()() }
         testInvokable(0) { it }
     }
-
-    operator fun Invokable.invoke() = todoTask31()
-    fun Invokable.getNumberOfInvocations() = todoTask31()
 }
