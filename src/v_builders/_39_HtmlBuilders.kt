@@ -22,7 +22,7 @@ fun todoTask39(): Nothing = TODO(
 fun renderProductTable(): String {
     return html {
         table {
-            tr {
+            tr(color = getTitleColor()) {
                 td {
                     text("Product")
                 }
