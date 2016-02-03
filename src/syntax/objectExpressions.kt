@@ -7,6 +7,7 @@ fun objectLiteral() {
     YourOldJavaCodeUsingRunnable.run(object : Runnable {
         override fun run() {
             // ...
+            System.out.print("RUN running")
         }
     })
 }

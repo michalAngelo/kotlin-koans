@@ -33,9 +33,9 @@ fun whenExpression(x: Int) {
 
 fun whenWithoutArgument(x: Int) {
     when {
-        x == 42 -> "x is 42"
-        x % 2 == 1 -> "x is odd"
-        else -> "otherwise"
+        x == 42 -> System.out.println("x is 42")
+        x % 2 == 1 -> System.out.println("x is odd")
+        else -> System.out.println("otherwise")
     }
 }
 

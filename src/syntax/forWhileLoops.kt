@@ -1,15 +1,27 @@
 package syntax.forWhileLoops
 
 fun forLoop(collection: Collection<String>) {
-    for (i in 1..10) {}
+    val list = collection.toArrayList()
+    for (i in 1..10) {
+        System.out.println(list.get(i))
+    }
+    System.out.println("\n\n")
+    for (s in collection) {
+        System.out.println(s)
+    }
 
-    for (s in collection) {}
-
-    for ((index, s) in collection.withIndex()) {}
+    System.out.println("\n\n")
+    for ((index, s) in collection.withIndex()) {
+        System.out.println(s + "  index: " + index)
+    }
 }
 
 fun iteratingOverMap(map: Map<Int, String>) {
-    for ((key, value) in map) {}
+    System.out.println("\n\n")
+    for ((key, value) in map) {
+        System.out.print(key.toInt())
+        System.out.println(": " + value)
+    }
 }
 
 fun whileLoop() {
@@ -28,8 +40,7 @@ fun labels() {
         innerLoop@ for (i in 1..10) {
             if (i < 10) {
                 continue@innerLoop
-            }
-            else {
+            } else {
                 break@outerLoop
             }
         }
